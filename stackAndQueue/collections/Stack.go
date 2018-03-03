@@ -16,6 +16,11 @@ func (q *Stack) Pop() (n interface{}) {
 	return
 }
 
+// Peek Stack
+func (q *Stack) Peek() interface{} {
+	return (*q)[q.Len()-1]
+}
+
 // Len Stack
 func (q *Stack) Len() int {
 	return len(*q)

@@ -15,6 +15,11 @@ func (q *Queue) Pop() (n interface{}) {
 	return
 }
 
+// Peek Queue
+func (q *Queue) Peek() (n interface{}) {
+	return (*q)[0]
+}
+
 // Len Queue
 func (q *Queue) Len() int {
 	return len(*q)
