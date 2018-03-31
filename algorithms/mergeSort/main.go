@@ -29,6 +29,10 @@ func MergeSort(list []int) []int {
 		right[j-mid] = list[j]
 	}
 
+	fmt.Println("mid", mid)
+	fmt.Println("left", left)
+	fmt.Println("right", right)
+
 	result := merge(MergeSort(left), MergeSort(right), make([]int, listSize))
 
 	return result
